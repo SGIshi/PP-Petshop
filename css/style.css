@@ -29,8 +29,8 @@ header {
 }
 
 .logo_container img {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     margin-top: 10px;
 }  
@@ -48,6 +48,7 @@ nav ul li a {
     color: white;
     font-size: 25px;
     padding: 50px;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 1020px) {
@@ -96,6 +97,7 @@ nav ul li a {
 
 #destacados h2 {
     text-align: center;
+    margin-top: 30px;
 }
 
 #destacados img {
@@ -142,6 +144,43 @@ nav ul li a {
         margin-bottom: 20px; 
     }
 }
+
+/*==========================================*/
+/*CONSEJOS*/
+/*===========================================*/
+
+#consejos {
+    margin: 30px;
+}
+
+
+#consejos h1 {
+    text-align: center;
+}
+
+#consejos img {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    height: auto;
+    padding: 15px;
+}
+
+#consejos p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    #consejos img {
+        max-width: 100%;
+    }
+
+    #consejos p {
+        font-size: 16px;
+    }
+}
+
+
 
 /*===========================================*/
 /*CONTACTO*/
@@ -278,7 +317,7 @@ nav ul li a {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
     #footer {
         display: flex;
         flex-direction: column; /* Cambia la dirección del flex a columna para el modo responsive */
