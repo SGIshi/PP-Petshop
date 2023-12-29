@@ -23,66 +23,39 @@ main {
 /*HEADER/NAV*/
 /*===========================================*/
 
-header {
+.navbar-custom {
     background-color: #ffc300;
-    height: 90px;
+    height: 100px;
 }
 
-.logo_container img {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    margin-top: 10px;
-}  
-
-
-
-#navBar {
-    height: 80px;
+.navbar-custom .navbar-collapse {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav ul li a {
-    color: white;
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
     font-size: 25px;
-    padding: 50px;
-    margin-top: 15px;
+    padding: 10px;
 }
 
-@media screen and (max-width: 1020px) {
-    header {
-        height: auto; 
-    }
-
-    .logo_container img {
-        height: 60px; 
-        width: 60px;
-        margin-top: 0; 
-    }
-
-    #navBar {
-        flex-direction: column; 
-        align-items: flex-start; 
-        height: auto; 
-    }
-
-    nav ul {
-        width: 100%; 
-        text-align: center; 
-        padding: 10px 0; 
-    }
-
-    nav ul li {
-        display: block; 
-        margin-bottom: 10px; 
-    }
-
-    nav ul li a {
-        padding: 15px; 
-    }
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: blue;
 }
+
+.navbar-custom .navbar-nav {
+    padding-right: 50px;
+}
+
+
+.logo  img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
 
 
 /*==========================================*/
