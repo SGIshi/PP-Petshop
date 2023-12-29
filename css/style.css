@@ -37,7 +37,7 @@ main {
 .navbar-custom .navbar-nav .nav-link {
     color: #ffffff;
     font-size: 25px;
-    padding: 10px;
+    padding: 50px;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
@@ -210,14 +210,79 @@ main {
 /*CATALOGO*/
 /*===========================================*/
 
-#catalogo .productosCatalogo {
-    width: 150px;
-    height: 150px;
-    background-color: rgb(243, 239, 8);
-    border: 1px solid black;
-    margin: 30px;
+.catalogoFondo {
+    position: relative;
 }
 
+.catalogoFondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.tipoCatalogo {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px 0px;
+}
+
+.contenedorProducto {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenedorProducto .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedorProducto .tarjeta {
+    background-color: #FFD000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.contenedorProducto .tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenedorProducto .contenidoTarjeta {
+    padding: 20px;
+}
+
+.contenedorProducto .tarjeta h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contenedorProducto .tarjeta p {
+    font-size: 16px;
+    color: white;
+}
+
+.contenedorProducto .tarjeta:hover {
+    transform: scale(1.05);
+}
 
 
 /*===========================================*/
