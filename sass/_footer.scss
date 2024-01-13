@@ -1,0 +1,77 @@
+/*===========================================*/
+/*FOOTER*/
+/*===========================================*/
+#footer {
+    margin-top: auto;
+    background-color: #ffc300;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+.footer__logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.footer__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__redes ul li {
+    margin-bottom: 12px;
+}
+
+.footer__redes img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+.redes__imagenes {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer__redes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
+.footer__link ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__link ul li {
+    margin-bottom: 10px;
+}
+
+.footer__link ul li a {
+    color: black;
+}
+
+
+@media screen and (max-width: 650px) {
+    #footer {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flex a columna para el modo responsive */
+        align-items: center; /* Alinea los elementos al centro */
+    }
+}
